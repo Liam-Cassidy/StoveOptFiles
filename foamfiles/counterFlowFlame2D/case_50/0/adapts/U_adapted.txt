@@ -1,0 +1,59 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0]; // m per s
+internalField   uniform (0 0 0); (x,z,y)
+
+boundaryField
+{
+    fuel
+    {
+        type            fixedValue;
+        value           uniform (0 0.1 0); // 0.1 m/s uniform from fuel -- z-direction 
+    }
+    primary_air
+    {
+        type            fixedValue;
+        value           uniform (0 0.25 0); // random assigned 0.25 m/s for now -- z direction
+    }
+
+    secondary_air_RHS
+    {
+        type            fixedValue;
+        value           uniform (-0.1 0 0); // random assigned 0.1 m/s into domain from the RHS
+    }
+
+    secondary_air_LHS
+    {
+        type            fixedValue;
+        value           uniform (0.1 0 0); // random assigned 0.1 m/s into domain from the LHS
+    }
+
+    outlet
+    {
+        type            pressureInletOutletVelocity;
+        value           $internalField;
+    }
+
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //

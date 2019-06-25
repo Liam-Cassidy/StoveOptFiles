@@ -1,0 +1,90 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6-e29811f5dff8
+Exec   : checkMesh -case ./ReactingFoamRunner_reactingFoam_serial_unlimited_runDir
+Date   : Jun 24 2019
+Time   : 17:04:26
+Host   : "DESKTOP-FJSH8MB"
+PID    : 918
+I/O    : uncollated
+Case   : ./ReactingFoamRunner_reactingFoam_serial_unlimited_runDir
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    points:           560
+    faces:            1107
+    internal faces:   675
+    cells:            297
+    faces per cell:   6
+    boundary patches: 7
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     297
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+ ***Total number of faces on empty patches is not divisible by the number of cells in the mesh. Hence this mesh is not 1D or 2D.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+   *Number of regions: 2
+    The mesh has multiple regions which are not connected by any face.
+  <<Writing region information to "0/cellToRegion"
+  <<Writing region 0 with 27 cells to cellSet region0
+  <<Writing region 1 with 270 cells to cellSet region1
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points   Surface topology
+    fuel                36       48       ok (non-closed singly connected)
+    primary_air         9        16       ok (non-closed singly connected)
+    Secondary_air_RHS   9        16       ok (non-closed singly connected)
+    Secondary_air_LHS   9        16       ok (non-closed singly connected)
+    outlet              18       32       ok (non-closed singly connected)
+    stove_body          153      224      ok (non-closed singly connected)
+    frontAndBack        198      280      ok (non-closed singly connected)
+
+Checking geometry...
+    Overall domain bounding box (-0.1 -0.07 0) (0 0.17 0.5)
+    Mesh has 2 geometric (non-empty/wedge) directions (0 1 1)
+    Mesh has 2 solution (non-empty) directions (0 1 1)
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-1.33304e-17 2.59201e-18 -5.55431e-19) OK.
+    Max cell openness = 1.21973e-16 OK.
+    Max aspect ratio = 10 OK.
+    Minimum face area = 0.0001. Maximum face area = 0.00188889.  Face area magnitudes OK.
+    Min volume = 3.33333e-06. Max volume = 5.55556e-05.  Total volume = 0.00484.  Cell volumes OK.
+    Mesh non-orthogonality Max: 0 average: 0
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 2.91434e-14 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+End
+

@@ -1,0 +1,40 @@
+(dp1
+S'solverFull'
+p2
+S'blockMesh'
+p3
+sS'remark'
+p4
+S'No remark given'
+p5
+sS'casename'
+p6
+S'ReactingFoamRunner_reactingFoam_serial_unlimited_runDir'
+p7
+sS'solver'
+p8
+g3
+sS'commandLine'
+p9
+S'blockMesh -case ./ReactingFoamRunner_reactingFoam_serial_unlimited_runDir'
+p10
+sS'hostname'
+p11
+S'DESKTOP-FJSH8MB'
+p12
+sS'lines'
+p13
+I0
+sS'casefullname'
+p14
+S'/mnt/c/Oregon_State/Spring_2019/Soft_dev_eng/StoveOpt/StoveOpt/foamfiles/counterFlowFlame2D/case_150/ReactingFoamRunner_reactingFoam_serial_unlimited_runDir'
+p15
+sS'starttime'
+p16
+S'Mon Jun 24 17:04:25 2019'
+p17
+sS'logfile'
+p18
+S'./ReactingFoamRunner_reactingFoam_serial_unlimited_runDir/PyFoamRunner.blockMesh.logfile'
+p19
+s.

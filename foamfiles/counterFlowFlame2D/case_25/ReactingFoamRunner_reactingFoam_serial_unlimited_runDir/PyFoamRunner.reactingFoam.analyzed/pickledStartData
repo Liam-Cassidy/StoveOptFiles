@@ -1,0 +1,41 @@
+(dp1
+S'solverFull'
+p2
+S'/opt/openfoam6/platforms/linux64GccDPInt32Opt/bin/reactingFoam'
+p3
+sS'remark'
+p4
+S'No remark given'
+p5
+sS'casename'
+p6
+S'ReactingFoamRunner_reactingFoam_serial_unlimited_runDir'
+p7
+sS'solver'
+p8
+S'reactingFoam'
+p9
+sS'commandLine'
+p10
+S'/opt/openfoam6/platforms/linux64GccDPInt32Opt/bin/reactingFoam -case ./ReactingFoamRunner_reactingFoam_serial_unlimited_runDir'
+p11
+sS'hostname'
+p12
+S'DESKTOP-FJSH8MB'
+p13
+sS'lines'
+p14
+I0
+sS'casefullname'
+p15
+S'/mnt/c/Oregon_State/Spring_2019/Soft_dev_eng/StoveOpt/StoveOpt/foamfiles/counterFlowFlame2D/case_150/ReactingFoamRunner_reactingFoam_serial_unlimited_runDir'
+p16
+sS'starttime'
+p17
+S'Mon Jun 24 17:04:27 2019'
+p18
+sS'logfile'
+p19
+S'./ReactingFoamRunner_reactingFoam_serial_unlimited_runDir/PyFoamRunner.reactingFoam.logfile'
+p20
+s.
